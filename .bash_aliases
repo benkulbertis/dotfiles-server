@@ -1,5 +1,5 @@
 alias update='sudo apt-get update && sudo apt-get upgrade'
-alias top="htop"
+alias top='htop'
 alias ls='ls -F --col'
 alias ll='ls -l'
 alias s='cd ..'
