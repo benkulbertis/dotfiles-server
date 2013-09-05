@@ -1,6 +1,4 @@
-alias iptables-save='sudo sh -c "iptables-save > /etc/iptables.rules"'
 alias update='sudo apt-get update && sudo apt-get upgrade'
-alias c="clear"
 alias top="htop"
 alias ls='ls -F --col'
 alias ll='ls -l'
@@ -10,11 +8,8 @@ alias diskspace='df -h | grep -E "(\/dev\/simfs|Filesystem)"'
 alias largest='find . -type f -print0 | xargs -0 du -s | sort -n | tail -10 | cut -f2 | xargs -I{} du -sh {}'
 alias unpack='/bin/tar -xzvpf'
 alias contents='/bin/tar -tzf'
-# make a temp dir, then immediately cd into it
 alias mktd='tdir=`mktemp -d` && cd $tdir'
 alias proc='ps aux | grep'
-
-alias fix-apt-gpg='sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys'
 
 ex ()
 {
